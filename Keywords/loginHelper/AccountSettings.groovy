@@ -52,8 +52,11 @@ public class AccountSettings {
 		println('Choosing language ' + language)
 
 		WebUI.click(findTestObject('Object Repository/First/div_lang'))
+		WebUI.delay(1)
 
 		WebUI.click(findTestObject('Object Repository/First/language parmed', [('lang_code') : language]))
+
+
 		WebUI.click(findTestObject('Object Repository/First/span_Save and Continue'))
 	}
 }

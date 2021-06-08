@@ -21,8 +21,12 @@ CustomKeywords.'loginHelper.AccountSettings.organization'('')
 CustomKeywords.'loginHelper.AccountSettings.language'('')
 CustomKeywords.'loginHelper.selectFile.book'('')
 WebUI.click(findTestObject('Object Repository/tN Card/svg_translationNotes_resource_card_tn_card_menu'))
+WebUI.delay(2)
 if (WebUI.verifyElementChecked(findTestObject('Object Repository/tN Card/input_Reference_ID'), 1))
+//if (WebUI.verifyElementAttributeValue(findTestObject('Object Repository/tN Card/input_Reference_ID'), 'checked','true', 2))
 {
+	println("Id checkbox is checked")
+	WebUI.delay(2)
 	WebUI.click(findTestObject('Object Repository/tN Card/input_Reference_ID'))
 	println("Id checkbox is unchecked by the script successfully")
 }
@@ -32,6 +36,8 @@ else
 }
 if (WebUI.verifyElementChecked(findTestObject('Object Repository/tN Card/input_ID_Occurrence'), 1))
 	{
+		println("Occurrence checkbox is checked")
+		WebUI.delay(2)
 		WebUI.click(findTestObject('Object Repository/tN Card/input_ID_Occurrence'))
 		println("Occurrence checkbox is unchecked by the script successfully")
 	}
@@ -74,34 +80,66 @@ if (WebUI.verifyElementChecked(findTestObject('Object Repository/tN Card/input_R
 		println("Columns are in different order")
 	}
 	//CHECK the extra checkboxes
+	//test element code
+	if(WebUI.verifyElementChecked(findTestObject('Object Repository/tN Card/input_Occurrence Note'), 2, FailureHandling.OPTIONAL))
+	{
+		println("Column Occurrence Note is checked")
+
+	}
+	else
+	{
+		println("Column Occurrence Note is not checked")
+	}
 	WebUI.click(findTestObject('Object Repository/tN Card/input_Occurrence Note'))
+	//test element code
+	if(WebUI.verifyElementChecked(findTestObject('Object Repository/tN Card/input_Occurrence Note'), 2, FailureHandling.OPTIONAL))
+		{
+			println("Column Occurrence Note is checked")
+	
+		}
+		else
+		{
+			println("Column Occurrence Note is not checked")
+		}
+		if(WebUI.verifyElementChecked(findTestObject('Object Repository/tN Card/input_Original Quote'), 2, FailureHandling.OPTIONAL))
+			{
+				println("Column OriginaL Quote is checked")
+		
+			}
+			else
+			{
+				println("Column OriginaL Quote is not checked")
+			}
 	WebUI.click(findTestObject('Object Repository/tN Card/input_Original Quote'))
 	WebUI.click(findTestObject('Object Repository/tN Card/input_GL Quote'))
+	WebUI.delay(2)
 	WebUI.click(findTestObject('Object Repository/tN Card/svg_translationNotes Settings_settings_card_close'))
+	WebUI.delay(2)
 	//login to test_org
 	WebUI.click(findTestObject('Object Repository/tN Card/button_gatewayEdit_Hamburger menu'))
 	WebUI.click(findTestObject('Object Repository/tN Card/font_Account Settings'))
 	CustomKeywords.'loginHelper.AccountSettings.organization'('test_org')
 	WebUI.click(findTestObject('Object Repository/First/span_Save and Continue'))
 	WebUI.click(findTestObject('Object Repository/tN Card/div_tN Card'))
-	WebUI.scrollToElement(findTestObject('Object Repository/tN Card/legend_GLQuote'), 2)
+	//WebUI.verifyElementChecked(findTestObject('Object Repository/tN Card/div_tN Card'), 2, FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.scrollToElement(findTestObject('Object Repository/tN Card/legend_Note'), 2)
 	// verify the extra columns
 
-	if(WebUI.verifyElementPresent(findTestObject('Object Repository/tN Card/legend_GLQuote'), 1, FailureHandling.CONTINUE_ON_FAILURE ))
+	if(WebUI.verifyElementPresent(findTestObject('Object Repository/tN Card/legend_GLQuote'), 1, FailureHandling.OPTIONAL))
 	{
 		println("Error:Duplicate column for GLQuote is present in the card")
 	}
 	else {
 		println("Duplicate column for GL Quote is not present in the card")
 	}
-	if(WebUI.verifyElementPresent(findTestObject('Object Repository/tN Card/legend_OccurrenceNote'), 1, FailureHandling.CONTINUE_ON_FAILURE ))
+	if(WebUI.verifyElementPresent(findTestObject('Object Repository/tN Card/legend_OccurrenceNote'), 1, FailureHandling.OPTIONAL ))
 		{
 			println("Error:Duplicate column for Note is present in the card")
 		}
 		else {
 			println("Duplicate column for Note is not present in the card")
 		}
-	if(WebUI.verifyElementPresent(findTestObject('Object Repository/tN Card/legend_OrigQuote'), 1, FailureHandling.CONTINUE_ON_FAILURE ))
+	if(WebUI.verifyElementPresent(findTestObject('Object Repository/tN Card/legend_OrigQuote'), 1, FailureHandling.OPTIONAL ))
 		{
 			println("Error:Duplicate column for Original Quote is present in the card")
 		}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>gE_tN Card data fetch</name>
+   <name>gE_Test tN Card data fetch</name>
    <tag>#184</tag>
    <comment></comment>
    <testCaseGuid>30b9182c-54f9-4cfa-9916-3686f43937b3</testCaseGuid>

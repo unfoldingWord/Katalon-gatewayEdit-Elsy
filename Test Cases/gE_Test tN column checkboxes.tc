@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>gE_tN column checkboxes</name>
+   <name>gE_Test tN column checkboxes</name>
    <tag>#168</tag>
    <comment></comment>
    <testCaseGuid>7f26e815-643b-4d7d-9f36-290e7049cbdc</testCaseGuid>
