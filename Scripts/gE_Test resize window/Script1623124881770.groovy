@@ -16,21 +16,39 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+import javax.swing.JOptionPane;
 CustomKeywords.'loginHelper.loginToApp.logintoapp'()
 CustomKeywords.'loginHelper.AccountSettings.organization'('')
 CustomKeywords.'loginHelper.AccountSettings.language'('')
 CustomKeywords.'loginHelper.selectFile.book'('')
-WebUI.setViewPortSize(500, 976)//max shrink
-WebUI.delay(2)
-WebUI.scrollToPosition(60, 20)
-WebUI.delay(2)
-WebUI.setViewPortSize(645, 976)//desired
-WebUI.delay(2)
-WebUI.setViewPortSize(682, 976) //
-WebUI.delay(2)
-
 WebUI.setViewPortSize(1360, 976)
 WebUI.delay(2)
+WebUI.setViewPortSize(900, 976) //large
+JOptionPane.showMessageDialog(null,"large size",
+	"Message",
+	JOptionPane.PLAIN_MESSAGE);
+WebUI.setViewPortSize(680, 976) //
+WebUI.delay(2)
+JOptionPane.showMessageDialog(null,"small size",
+	"Message",
+	JOptionPane.PLAIN_MESSAGE);
+WebUI.setViewPortSize(500, 976)//max shrink
+WebUI.delay(2)
+WebUI.setViewPortSize(300, 976)
+WebUI.delay(2)
+
+WebUI.scrollToPosition(60, 20)
+WebUI.delay(2)
+
+
+JOptionPane.showMessageDialog(null,"Xs size",
+	"Message",
+	JOptionPane.PLAIN_MESSAGE);
+
+WebUI.setViewPortSize(645, 976)//desired
+WebUI.delay(2)
+
+
+
 
 WebUI.closeBrowser()
