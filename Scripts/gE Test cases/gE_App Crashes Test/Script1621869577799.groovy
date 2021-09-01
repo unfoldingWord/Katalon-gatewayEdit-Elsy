@@ -36,7 +36,7 @@ else {
  WebUI.click(findTestObject('Object Repository/tN Card/button_gatewayEdit_Hamburger menu'))
  WebUI.click(findTestObject('Object Repository/tN Card/font_Account Settings'))
  CustomKeywords.'loginHelper.AccountSettings.organization'('unfoldingWord')
- CustomKeywords.'loginHelper.AccountSettings.language'('es')
+ CustomKeywords.'loginHelper.AccountSettings.language'('en')
  //WebUI.click(findTestObject('Object Repository/First/lang-selection'))
  //WebUI.scrollToElement
  //WebUI.click(findTestObject('Object Repository/First/li_en - English - English'))

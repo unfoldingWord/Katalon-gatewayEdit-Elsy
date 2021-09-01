@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Regression 1" time="138.142" tests="4" failures="0" skips="0" errors="0">
+   <testsuite name="Regression 1" tests="4" failures="0" errors="0" time="138.142" skips="0" timestamp="2021-07-27 08:18:17" hostname="elsylitsonlambert - elsys-mbp.phub.net.cable.rogers.com" id="Test Suites/Regression 1">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/elsylitsonlambert/git/Katalon-gatewayEdit-Elsy/Reports/20210727_081812/Regression 1/20210727_081813"/>
+         <property name="logFiles" value="/Users/elsylitsonlambert/git/Katalon-gatewayEdit-Elsy/Reports/20210727_081812/Regression 1/20210727_081813/execution0.log"/>
+         <property name="attachments" value="/Users/elsylitsonlambert/git/Katalon-gatewayEdit-Elsy/Reports/20210727_081812/Regression 1/20210727_081813/1627388430047.png, /Users/elsylitsonlambert/git/Katalon-gatewayEdit-Elsy/Reports/20210727_081812/Regression 1/20210727_081813/1627388432638.png, /Users/elsylitsonlambert/git/Katalon-gatewayEdit-Elsy/Reports/20210727_081812/Regression 1/20210727_081813/1627388435203.png"/>
+         <property name="hostName" value="elsylitsonlambert - elsys-mbp.phub.net.cable.rogers.com"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="7.9.1.208"/>
+         <property name="browser" value="Chrome 92.0.4515.107"/>
+         <property name="hostAddress" value="10.0.0.168"/>
+         <property name="sessionId" value="e033ec4a8ef1fd379e35b45e1d4379bd"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/gE Test cases/gE_App Crashes Test" time="36.528" classname="Test Cases/gE Test cases/gE_App Crashes Test" status="PASSED">
+         <system-out><![CDATA[2021-07-27 08:18:18 - [TEST_CASE][PASSED] - Test Cases/gE Test cases/gE_App Crashes Test: Test Cases/gE Test cases/gE_App Crashes Test
+
+2021-07-27 08:18:18 - [TEST_STEP][PASSED] - loginHelper.loginToApp.loginApp("https://gateway-edit.netlify.app/", "test001", "Test2021!"): loginHelper.loginToApp.loginApp is PASSED
+
+2021-07-27 08:18:18 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-07-27 08:18:18 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-07-27 08:18:23 - [MESSAGE][PASSED] - Browser is opened with url: 'https://gateway-edit.netlify.app/'
+
+2021-07-27 08:18:23 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-07-27 08:18:23 - [MESSAGE][PASSED] - Current window maximized
+
+2021-07-27 08:18:24 - [MESSAGE][PASSED] - Keys 'test001' sent to object: 'Object Repository/First/input_Username_username'
+
+2021-07-27 08:18:25 - [MESSAGE][PASSED] - Keys 'Test2021!' sent to object: 'Object Repository/First/input_Password_password'
+
+2021-07-27 08:18:25 - [MESSAGE][PASSED] - Object: 'Object Repository/First/span_Login' is clicked on
+
+2021-07-27 08:18:26 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-07-27 08:18:26 - [MESSAGE][PASSED] - loginHelper.loginToApp.loginApp is PASSED
+
+2021-07-27 08:18:26 - [TEST_STEP][PASSED] - ErrorMessage = getText(findTestObject("Object Repository/First/Error message")): Text of object 'Object Repository/First/Error message' is: 'The application can not continue. The current username is not part of a DCS organization. Please contact your administrator.'
+
+2021-07-27 08:18:28 - [MESSAGE][PASSED] - Text of object 'Object Repository/First/Error message' is: 'The application can not continue. The current username is not part of a DCS organization. Please contact your administrator.'
+
+2021-07-27 08:18:28 - [TEST_STEP][PASSED] - println(ErrorMessage): null
+
+2021-07-27 08:18:28 - [TEST_STEP][PASSED] - if (ErrorMessage == "The application can not continue. The current username is not part of a DCS organization. Please contact your administrator."): null
+
+2021-07-27 08:18:28 - [TEST_STEP][PASSED] - println("Getting Error message as expected"): null
+
+2021-07-27 08:18:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/button_gatewayEdit_Hamburger menu")): Object: 'Object Repository/tN Card/button_gatewayEdit_Hamburger menu' is clicked on
+
+2021-07-27 08:18:28 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/button_gatewayEdit_Hamburger menu' is clicked on
+
+2021-07-27 08:18:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/First/span_Logout")): Object: 'Object Repository/First/span_Logout' is clicked on
+
+2021-07-27 08:18:29 - [MESSAGE][PASSED] - Object: 'Object Repository/First/span_Logout' is clicked on
+
+2021-07-27 08:18:29 - [TEST_STEP][PASSED] - loginHelper.loginToApp.logintoapp(): loginHelper.loginToApp.logintoapp is PASSED
+
+2021-07-27 08:18:29 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-07-27 08:18:29 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-07-27 08:18:29 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-07-27 08:18:33 - [MESSAGE][PASSED] - Browser is opened with url: 'https://release-v0-9-0--gateway-edit.netlify.app/'
+
+2021-07-27 08:18:33 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-07-27 08:18:33 - [MESSAGE][PASSED] - Current window maximized
+
+2021-07-27 08:18:33 - [MESSAGE][PASSED] - Keys 'elsylambert' sent to object: 'Object Repository/First/input_Username_username'
+
+2021-07-27 08:18:34 - [MESSAGE][PASSED] - Keys 'fatak43' sent to object: 'Object Repository/First/input_Password_password'
+
+2021-07-27 08:18:34 - [MESSAGE][PASSED] - Object: 'Object Repository/First/span_Login' is clicked on
+
+2021-07-27 08:18:35 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-07-27 08:18:35 - [MESSAGE][PASSED] - loginHelper.loginToApp.logintoapp is PASSED
+
+2021-07-27 08:18:35 - [TEST_STEP][PASSED] - loginHelper.AccountSettings.organization(""): loginHelper.AccountSettings.organization is PASSED
+
+2021-07-27 08:18:37 - [MESSAGE][PASSED] - Object: 'Object Repository/First/div_org' is clicked on
+
+2021-07-27 08:18:38 - [MESSAGE][PASSED] - Object: 'Object Repository/First/org-parmed' is clicked on
+
+2021-07-27 08:18:40 - [MESSAGE][WARNING] - No alert found after 2 second(s).
+
+2021-07-27 08:18:40 - [MESSAGE][PASSED] - loginHelper.AccountSettings.organization is PASSED
+
+2021-07-27 08:18:40 - [TEST_STEP][PASSED] - loginHelper.AccountSettings.language(""): loginHelper.AccountSettings.language is PASSED
+
+2021-07-27 08:18:40 - [MESSAGE][PASSED] - Object: 'Object Repository/First/div_lang' is clicked on
+
+2021-07-27 08:18:41 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-07-27 08:18:42 - [MESSAGE][PASSED] - Object: 'Object Repository/First/language parmed' is clicked on
+
+2021-07-27 08:18:42 - [MESSAGE][PASSED] - Object: 'Object Repository/First/span_Save and Continue' is clicked on
+
+2021-07-27 08:18:42 - [MESSAGE][PASSED] - loginHelper.AccountSettings.language is PASSED
+
+2021-07-27 08:18:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/button_gatewayEdit_Hamburger menu")): Object: 'Object Repository/tN Card/button_gatewayEdit_Hamburger menu' is clicked on
+
+2021-07-27 08:18:43 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/button_gatewayEdit_Hamburger menu' is clicked on
+
+2021-07-27 08:18:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/font_Account Settings")): Object: 'Object Repository/tN Card/font_Account Settings' is clicked on
+
+2021-07-27 08:18:45 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/font_Account Settings' is clicked on
+
+2021-07-27 08:18:45 - [TEST_STEP][PASSED] - loginHelper.AccountSettings.organization("unfoldingWord"): loginHelper.AccountSettings.organization is PASSED
+
+2021-07-27 08:18:46 - [MESSAGE][PASSED] - Object: 'Object Repository/First/div_org' is clicked on
+
+2021-07-27 08:18:48 - [MESSAGE][PASSED] - Object: 'Object Repository/First/org-parmed' is clicked on
+
+2021-07-27 08:18:50 - [MESSAGE][WARNING] - No alert found after 2 second(s).
+
+2021-07-27 08:18:50 - [MESSAGE][PASSED] - loginHelper.AccountSettings.organization is PASSED
+
+2021-07-27 08:18:50 - [TEST_STEP][PASSED] - loginHelper.AccountSettings.language("en"): loginHelper.AccountSettings.language is PASSED
+
+2021-07-27 08:18:50 - [MESSAGE][PASSED] - Object: 'Object Repository/First/div_lang' is clicked on
+
+2021-07-27 08:18:51 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-07-27 08:18:51 - [MESSAGE][PASSED] - Object: 'Object Repository/First/language parmed' is clicked on
+
+2021-07-27 08:18:52 - [MESSAGE][PASSED] - Object: 'Object Repository/First/span_Save and Continue' is clicked on
+
+2021-07-27 08:18:52 - [MESSAGE][PASSED] - loginHelper.AccountSettings.language is PASSED
+
+2021-07-27 08:18:52 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2021-07-27 08:18:54 - [MESSAGE][PASSED] - Delayed 2 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/gE Test cases/gE_Test Highlights from tWL" time="22.773" classname="Test Cases/gE Test cases/gE_Test Highlights from tWL" status="PASSED">
+         <system-out><![CDATA[2021-07-27 08:18:54 - [TEST_CASE][PASSED] - Test Cases/gE Test cases/gE_Test Highlights from tWL: Test Cases/gE Test cases/gE_Test Highlights from tWL
+
+2021-07-27 08:18:55 - [TEST_STEP][PASSED] - loginHelper.loginToApp.logintoapp(): loginHelper.loginToApp.logintoapp is PASSED
+
+2021-07-27 08:18:55 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-07-27 08:18:55 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-07-27 08:18:55 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-07-27 08:18:58 - [MESSAGE][PASSED] - Browser is opened with url: 'https://release-v0-9-0--gateway-edit.netlify.app/'
+
+2021-07-27 08:18:58 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-07-27 08:18:58 - [MESSAGE][PASSED] - Current window maximized
+
+2021-07-27 08:18:59 - [MESSAGE][PASSED] - Keys 'elsylambert' sent to object: 'Object Repository/First/input_Username_username'
+
+2021-07-27 08:18:59 - [MESSAGE][PASSED] - Keys 'fatak43' sent to object: 'Object Repository/First/input_Password_password'
+
+2021-07-27 08:19:00 - [MESSAGE][PASSED] - Object: 'Object Repository/First/span_Login' is clicked on
+
+2021-07-27 08:19:01 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-07-27 08:19:01 - [MESSAGE][PASSED] - loginHelper.loginToApp.logintoapp is PASSED
+
+2021-07-27 08:19:01 - [TEST_STEP][PASSED] - loginHelper.AccountSettings.organization(""): loginHelper.AccountSettings.organization is PASSED
+
+2021-07-27 08:19:02 - [MESSAGE][PASSED] - Object: 'Object Repository/First/div_org' is clicked on
+
+2021-07-27 08:19:03 - [MESSAGE][PASSED] - Object: 'Object Repository/First/org-parmed' is clicked on
+
+2021-07-27 08:19:05 - [MESSAGE][WARNING] - No alert found after 2 second(s).
+
+2021-07-27 08:19:05 - [MESSAGE][PASSED] - loginHelper.AccountSettings.organization is PASSED
+
+2021-07-27 08:19:05 - [TEST_STEP][PASSED] - loginHelper.AccountSettings.language(""): loginHelper.AccountSettings.language is PASSED
+
+2021-07-27 08:19:06 - [MESSAGE][PASSED] - Object: 'Object Repository/First/div_lang' is clicked on
+
+2021-07-27 08:19:07 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-07-27 08:19:07 - [MESSAGE][PASSED] - Object: 'Object Repository/First/language parmed' is clicked on
+
+2021-07-27 08:19:08 - [MESSAGE][PASSED] - Object: 'Object Repository/First/span_Save and Continue' is clicked on
+
+2021-07-27 08:19:08 - [MESSAGE][PASSED] - loginHelper.AccountSettings.language is PASSED
+
+2021-07-27 08:19:08 - [TEST_STEP][PASSED] - loginHelper.selectFile.book("Philemon"): loginHelper.selectFile.book is PASSED
+
+2021-07-27 08:19:08 - [MESSAGE][PASSED] - Object: 'Object Repository/First/svg_gatewayEdit_combo-box-arrow-bible' is clicked on
+
+2021-07-27 08:19:10 - [MESSAGE][PASSED] - Object: 'Object Repository/First/bookname_parmed' is clicked on
+
+2021-07-27 08:19:10 - [MESSAGE][PASSED] - loginHelper.selectFile.book is PASSED
+
+2021-07-27 08:19:10 - [TEST_STEP][PASSED] - word1 = findTestObject("Object Repository/twl/td_paul"): null
+
+2021-07-27 08:19:10 - [TEST_STEP][PASSED] - word2 = findTestObject("Object Repository/twl/td_prison"): null
+
+2021-07-27 08:19:10 - [TEST_STEP][PASSED] - word3 = findTestObject("Object Repository/twl/td_christ"): null
+
+2021-07-27 08:19:10 - [TEST_STEP][PASSED] - greekword1 = findTestObject("Object Repository/twl/span_paul greek"): null
+
+2021-07-27 08:19:10 - [TEST_STEP][PASSED] - greekword2 = findTestObject("Object Repository/twl/span_prison greek"): null
+
+2021-07-27 08:19:10 - [TEST_STEP][PASSED] - greekword3 = findTestObject("Object Repository/twl/span_Christ greek"): null
+
+2021-07-27 08:19:10 - [TEST_STEP][PASSED] - greekWordList = [greekword1, greekword2, greekword3]: null
+
+2021-07-27 08:19:10 - [TEST_STEP][PASSED] - wordList = [word1, word2, word3]: null
+
+2021-07-27 08:19:10 - [TEST_STEP][PASSED] - for ([j = 0, j < greekWordList.size(), <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>]): null
+
+2021-07-27 08:19:10 - [TEST_STEP][PASSED] - for ([i = 0, i < wordList.size(), (i++)]): null
+
+2021-07-27 08:19:10 - [TEST_STEP][PASSED] - click(wordList[i]): Object: 'Object Repository/twl/td_paul' is clicked on
+
+2021-07-27 08:19:15 - [MESSAGE][PASSED] - Object: 'Object Repository/twl/td_paul' is clicked on
+
+2021-07-27 08:19:15 - [TEST_STEP][PASSED] - println("Clicking on " + wordList[i]): null
+
+2021-07-27 08:19:15 - [TEST_STEP][PASSED] - if (verifyElementAttributeValue(greekWordList[j], "data-testselected", "true", 2)): null
+
+2021-07-27 08:19:15 - [MESSAGE][PASSED] - Object 'Object Repository/twl/span_paul greek' has attribute 'data-testselected' with value 'true'
+
+2021-07-27 08:19:15 - [TEST_STEP][PASSED] - println("Selected word " + greekWordList[j] + "is highlighted"): null
+
+2021-07-27 08:19:15 - [TEST_STEP][PASSED] - (j++): null
+
+2021-07-27 08:19:15 - [TEST_STEP][PASSED] - click(wordList[i]): Object: 'Object Repository/twl/td_prison' is clicked on
+
+2021-07-27 08:19:16 - [MESSAGE][PASSED] - Object: 'Object Repository/twl/td_prison' is clicked on
+
+2021-07-27 08:19:16 - [TEST_STEP][PASSED] - println("Clicking on " + wordList[i]): null
+
+2021-07-27 08:19:16 - [TEST_STEP][PASSED] - if (verifyElementAttributeValue(greekWordList[j], "data-testselected", "true", 2)): null
+
+2021-07-27 08:19:16 - [MESSAGE][PASSED] - Object 'Object Repository/twl/span_prison greek' has attribute 'data-testselected' with value 'true'
+
+2021-07-27 08:19:16 - [TEST_STEP][PASSED] - println("Selected word " + greekWordList[j] + "is highlighted"): null
+
+2021-07-27 08:19:16 - [TEST_STEP][PASSED] - (j++): null
+
+2021-07-27 08:19:16 - [TEST_STEP][PASSED] - click(wordList[i]): Object: 'Object Repository/twl/td_christ' is clicked on
+
+2021-07-27 08:19:17 - [MESSAGE][PASSED] - Object: 'Object Repository/twl/td_christ' is clicked on
+
+2021-07-27 08:19:17 - [TEST_STEP][PASSED] - println("Clicking on " + wordList[i]): null
+
+2021-07-27 08:19:17 - [TEST_STEP][PASSED] - if (verifyElementAttributeValue(greekWordList[j], "data-testselected", "true", 2)): null
+
+2021-07-27 08:19:17 - [MESSAGE][PASSED] - Object 'Object Repository/twl/span_Christ greek' has attribute 'data-testselected' with value 'true'
+
+2021-07-27 08:19:17 - [TEST_STEP][PASSED] - println("Selected word " + greekWordList[j] + "is highlighted"): null
+
+2021-07-27 08:19:17 - [TEST_STEP][PASSED] - (j++): null
+
+2021-07-27 08:19:17 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 08:19:17 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/gE Test cases/gE_Test tN Card data fetch" time="19.849" classname="Test Cases/gE Test cases/gE_Test tN Card data fetch" status="PASSED">
+         <system-out><![CDATA[2021-07-27 08:19:17 - [TEST_CASE][PASSED] - Test Cases/gE Test cases/gE_Test tN Card data fetch: Test Cases/gE Test cases/gE_Test tN Card data fetch
+
+2021-07-27 08:19:17 - [TEST_STEP][PASSED] - loginHelper.loginToApp.logintoapp(): loginHelper.loginToApp.logintoapp is PASSED
+
+2021-07-27 08:19:17 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-07-27 08:19:17 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-07-27 08:19:21 - [MESSAGE][PASSED] - Browser is opened with url: 'https://release-v0-9-0--gateway-edit.netlify.app/'
+
+2021-07-27 08:19:21 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-07-27 08:19:21 - [MESSAGE][PASSED] - Current window maximized
+
+2021-07-27 08:19:22 - [MESSAGE][PASSED] - Keys 'elsylambert' sent to object: 'Object Repository/First/input_Username_username'
+
+2021-07-27 08:19:22 - [MESSAGE][PASSED] - Keys 'fatak43' sent to object: 'Object Repository/First/input_Password_password'
+
+2021-07-27 08:19:22 - [MESSAGE][PASSED] - Object: 'Object Repository/First/span_Login' is clicked on
+
+2021-07-27 08:19:23 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-07-27 08:19:23 - [MESSAGE][PASSED] - loginHelper.loginToApp.logintoapp is PASSED
+
+2021-07-27 08:19:23 - [TEST_STEP][PASSED] - loginHelper.AccountSettings.organization(""): loginHelper.AccountSettings.organization is PASSED
+
+2021-07-27 08:19:25 - [MESSAGE][PASSED] - Object: 'Object Repository/First/div_org' is clicked on
+
+2021-07-27 08:19:26 - [MESSAGE][PASSED] - Object: 'Object Repository/First/org-parmed' is clicked on
+
+2021-07-27 08:19:28 - [MESSAGE][WARNING] - No alert found after 2 second(s).
+
+2021-07-27 08:19:28 - [MESSAGE][PASSED] - loginHelper.AccountSettings.organization is PASSED
+
+2021-07-27 08:19:28 - [TEST_STEP][PASSED] - loginHelper.AccountSettings.language(""): loginHelper.AccountSettings.language is PASSED
+
+2021-07-27 08:19:29 - [MESSAGE][PASSED] - Object: 'Object Repository/First/div_lang' is clicked on
+
+2021-07-27 08:19:30 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-07-27 08:19:30 - [MESSAGE][PASSED] - Object: 'Object Repository/First/language parmed' is clicked on
+
+2021-07-27 08:19:31 - [MESSAGE][PASSED] - Object: 'Object Repository/First/span_Save and Continue' is clicked on
+
+2021-07-27 08:19:31 - [MESSAGE][PASSED] - loginHelper.AccountSettings.language is PASSED
+
+2021-07-27 08:19:31 - [TEST_STEP][PASSED] - loginHelper.selectFile.book("Philemon"): loginHelper.selectFile.book is PASSED
+
+2021-07-27 08:19:32 - [MESSAGE][PASSED] - Object: 'Object Repository/First/svg_gatewayEdit_combo-box-arrow-bible' is clicked on
+
+2021-07-27 08:19:34 - [MESSAGE][PASSED] - Object: 'Object Repository/First/bookname_parmed' is clicked on
+
+2021-07-27 08:19:34 - [MESSAGE][PASSED] - loginHelper.selectFile.book is PASSED
+
+2021-07-27 08:19:34 - [TEST_STEP][PASSED] - if (verifyElementVisible(findTestObject("Object Repository/tN Card/tN_Reference11"))): null
+
+2021-07-27 08:19:37 - [MESSAGE][PASSED] - Object 'Object Repository/tN Card/tN_Reference11' is visible
+
+2021-07-27 08:19:37 - [TEST_STEP][PASSED] - println("Data is loaded in tN card "): null
+
+2021-07-27 08:19:37 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 08:19:37 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/gE Test cases/gE_Test tN column checkboxes" time="58.27" classname="Test Cases/gE Test cases/gE_Test tN column checkboxes" status="PASSED">
+         <system-out><![CDATA[2021-07-27 08:19:37 - [TEST_CASE][PASSED] - Test Cases/gE Test cases/gE_Test tN column checkboxes: Test Cases/gE Test cases/gE_Test tN column checkboxes
+
+2021-07-27 08:19:37 - [TEST_STEP][PASSED] - loginHelper.loginToApp.logintoapp(): loginHelper.loginToApp.logintoapp is PASSED
+
+2021-07-27 08:19:37 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-07-27 08:19:37 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-07-27 08:19:41 - [MESSAGE][PASSED] - Browser is opened with url: 'https://release-v0-9-0--gateway-edit.netlify.app/'
+
+2021-07-27 08:19:41 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-07-27 08:19:41 - [MESSAGE][PASSED] - Current window maximized
+
+2021-07-27 08:19:41 - [MESSAGE][PASSED] - Keys 'elsylambert' sent to object: 'Object Repository/First/input_Username_username'
+
+2021-07-27 08:19:42 - [MESSAGE][PASSED] - Keys 'fatak43' sent to object: 'Object Repository/First/input_Password_password'
+
+2021-07-27 08:19:42 - [MESSAGE][PASSED] - Object: 'Object Repository/First/span_Login' is clicked on
+
+2021-07-27 08:19:43 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-07-27 08:19:43 - [MESSAGE][PASSED] - loginHelper.loginToApp.logintoapp is PASSED
+
+2021-07-27 08:19:43 - [TEST_STEP][PASSED] - loginHelper.AccountSettings.organization(""): loginHelper.AccountSettings.organization is PASSED
+
+2021-07-27 08:19:45 - [MESSAGE][PASSED] - Object: 'Object Repository/First/div_org' is clicked on
+
+2021-07-27 08:19:46 - [MESSAGE][PASSED] - Object: 'Object Repository/First/org-parmed' is clicked on
+
+2021-07-27 08:19:48 - [MESSAGE][WARNING] - No alert found after 2 second(s).
+
+2021-07-27 08:19:48 - [MESSAGE][PASSED] - loginHelper.AccountSettings.organization is PASSED
+
+2021-07-27 08:19:48 - [TEST_STEP][PASSED] - loginHelper.AccountSettings.language(""): loginHelper.AccountSettings.language is PASSED
+
+2021-07-27 08:19:49 - [MESSAGE][PASSED] - Object: 'Object Repository/First/div_lang' is clicked on
+
+2021-07-27 08:19:50 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2021-07-27 08:19:50 - [MESSAGE][PASSED] - Object: 'Object Repository/First/language parmed' is clicked on
+
+2021-07-27 08:19:51 - [MESSAGE][PASSED] - Object: 'Object Repository/First/span_Save and Continue' is clicked on
+
+2021-07-27 08:19:51 - [MESSAGE][PASSED] - loginHelper.AccountSettings.language is PASSED
+
+2021-07-27 08:19:51 - [TEST_STEP][PASSED] - loginHelper.selectFile.book(""): loginHelper.selectFile.book is PASSED
+
+2021-07-27 08:19:51 - [MESSAGE][PASSED] - Object: 'Object Repository/First/svg_gatewayEdit_combo-box-arrow-bible' is clicked on
+
+2021-07-27 08:19:53 - [MESSAGE][PASSED] - Object: 'Object Repository/First/bookname_parmed' is clicked on
+
+2021-07-27 08:19:53 - [MESSAGE][PASSED] - loginHelper.selectFile.book is PASSED
+
+2021-07-27 08:19:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/svg_translationNotes_resource_card_tn_card_menu")): Object: 'Object Repository/tN Card/svg_translationNotes_resource_card_tn_card_menu' is clicked on
+
+2021-07-27 08:19:56 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/svg_translationNotes_resource_card_tn_card_menu' is clicked on
+
+2021-07-27 08:19:56 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2021-07-27 08:19:58 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-07-27 08:19:58 - [TEST_STEP][PASSED] - if (verifyElementChecked(findTestObject("Object Repository/tN Card/input_Reference_ID"), 1)): null
+
+2021-07-27 08:19:59 - [MESSAGE][PASSED] - Object 'Object Repository/tN Card/input_Reference_ID' is checked
+
+2021-07-27 08:19:59 - [TEST_STEP][PASSED] - println("Id checkbox is checked"): null
+
+2021-07-27 08:19:59 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2021-07-27 08:20:01 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-07-27 08:20:01 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/input_Reference_ID")): Object: 'Object Repository/tN Card/input_Reference_ID' is clicked on
+
+2021-07-27 08:20:01 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/input_Reference_ID' is clicked on
+
+2021-07-27 08:20:01 - [TEST_STEP][PASSED] - println("Id checkbox is unchecked by the script successfully"): null
+
+2021-07-27 08:20:01 - [TEST_STEP][PASSED] - if (verifyElementChecked(findTestObject("Object Repository/tN Card/input_ID_Occurrence"), 1)): null
+
+2021-07-27 08:20:02 - [MESSAGE][PASSED] - Object 'Object Repository/tN Card/input_ID_Occurrence' is checked
+
+2021-07-27 08:20:02 - [TEST_STEP][PASSED] - println("Occurrence checkbox is checked"): null
+
+2021-07-27 08:20:02 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2021-07-27 08:20:04 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-07-27 08:20:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/input_ID_Occurrence")): Object: 'Object Repository/tN Card/input_ID_Occurrence' is clicked on
+
+2021-07-27 08:20:04 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/input_ID_Occurrence' is clicked on
+
+2021-07-27 08:20:04 - [TEST_STEP][PASSED] - println("Occurrence checkbox is unchecked by the script successfully"): null
+
+2021-07-27 08:20:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/input_Reference_ID")): Object: 'Object Repository/tN Card/input_Reference_ID' is clicked on
+
+2021-07-27 08:20:04 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/input_Reference_ID' is clicked on
+
+2021-07-27 08:20:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/input_ID_Occurrence")): Object: 'Object Repository/tN Card/input_ID_Occurrence' is clicked on
+
+2021-07-27 08:20:05 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/input_ID_Occurrence' is clicked on
+
+2021-07-27 08:20:05 - [TEST_STEP][PASSED] - if (verifyElementChecked(findTestObject("Object Repository/tN Card/input_Reference_ID"), 1)): null
+
+2021-07-27 08:20:05 - [MESSAGE][PASSED] - Object 'Object Repository/tN Card/input_Reference_ID' is checked
+
+2021-07-27 08:20:05 - [TEST_STEP][PASSED] - println("Id checkbox is checked by the script successfully"): null
+
+2021-07-27 08:20:05 - [TEST_STEP][PASSED] - ColumnList = getText(findTestObject("Object Repository/tN Card/div_Show ColumnsList")): Text of object 'Object Repository/tN Card/div_Show ColumnsList' is: 'Show Columns
+Book
+Chapter
+Verse
+Reference
+ID
+Occurrence
+SupportReference
+Quote
+Tags
+Note'
+
+2021-07-27 08:20:06 - [MESSAGE][PASSED] - Text of object 'Object Repository/tN Card/div_Show ColumnsList' is: 'Show Columns
+Book
+Chapter
+Verse
+Reference
+ID
+Occurrence
+SupportReference
+Quote
+Tags
+Note'
+
+2021-07-27 08:20:06 - [TEST_STEP][PASSED] - println("The columns in tN card are" + ColumnList): null
+
+2021-07-27 08:20:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/svg_translationNotes Settings_settings_card_close")): Object: 'Object Repository/tN Card/svg_translationNotes Settings_settings_card_close' is clicked on
+
+2021-07-27 08:20:06 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/svg_translationNotes Settings_settings_card_close' is clicked on
+
+2021-07-27 08:20:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/button_gatewayEdit_Hamburger menu")): Object: 'Object Repository/tN Card/button_gatewayEdit_Hamburger menu' is clicked on
+
+2021-07-27 08:20:07 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/button_gatewayEdit_Hamburger menu' is clicked on
+
+2021-07-27 08:20:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/font_Account Settings")): Object: 'Object Repository/tN Card/font_Account Settings' is clicked on
+
+2021-07-27 08:20:07 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/font_Account Settings' is clicked on
+
+2021-07-27 08:20:07 - [TEST_STEP][PASSED] - loginHelper.AccountSettings.organization("test_org2"): loginHelper.AccountSettings.organization is PASSED
+
+2021-07-27 08:20:08 - [MESSAGE][PASSED] - Object: 'Object Repository/First/div_org' is clicked on
+
+2021-07-27 08:20:09 - [MESSAGE][PASSED] - Object: 'Object Repository/First/org-parmed' is clicked on
+
+2021-07-27 08:20:11 - [MESSAGE][WARNING] - No alert found after 2 second(s).
+
+2021-07-27 08:20:11 - [MESSAGE][PASSED] - loginHelper.AccountSettings.organization is PASSED
+
+2021-07-27 08:20:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/First/span_Save and Continue")): Object: 'Object Repository/First/span_Save and Continue' is clicked on
+
+2021-07-27 08:20:12 - [MESSAGE][PASSED] - Object: 'Object Repository/First/span_Save and Continue' is clicked on
+
+2021-07-27 08:20:12 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/svg_translationNotes_resource_card_tn_card_menu")): Object: 'Object Repository/tN Card/svg_translationNotes_resource_card_tn_card_menu' is clicked on
+
+2021-07-27 08:20:13 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/svg_translationNotes_resource_card_tn_card_menu' is clicked on
+
+2021-07-27 08:20:13 - [TEST_STEP][PASSED] - ColumnList2 = getText(findTestObject("Object Repository/tN Card/div_Show ColumnsList")): Text of object 'Object Repository/tN Card/div_Show ColumnsList' is: 'Show Columns
+Book
+Chapter
+GLQuote
+ID
+Occurrence
+OccurrenceNote
+OrigQuote
+SupportReference
+Verse'
+
+2021-07-27 08:20:14 - [MESSAGE][PASSED] - Text of object 'Object Repository/tN Card/div_Show ColumnsList' is: 'Show Columns
+Book
+Chapter
+GLQuote
+ID
+Occurrence
+OccurrenceNote
+OrigQuote
+SupportReference
+Verse'
+
+2021-07-27 08:20:14 - [TEST_STEP][PASSED] - println("The columns in tN card are" + ColumnList2): null
+
+2021-07-27 08:20:14 - [TEST_STEP][PASSED] - if (ColumnList == ColumnList2): null
+
+2021-07-27 08:20:14 - [TEST_STEP][PASSED] - else: null
+
+2021-07-27 08:20:14 - [TEST_STEP][PASSED] - println("Columns are in different order"): null
+
+2021-07-27 08:20:14 - [TEST_STEP][PASSED] - if (verifyElementChecked(findTestObject("Object Repository/tN Card/input_Occurrence Note"), 2, OPTIONAL)): null
+
+2021-07-27 08:20:14 - [MESSAGE][PASSED] - Object 'Object Repository/tN Card/input_Occurrence Note' is checked
+
+2021-07-27 08:20:14 - [TEST_STEP][PASSED] - println("Column Occurrence Note is checked"): null
+
+2021-07-27 08:20:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/input_Occurrence Note")): Object: 'Object Repository/tN Card/input_Occurrence Note' is clicked on
+
+2021-07-27 08:20:14 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/input_Occurrence Note' is clicked on
+
+2021-07-27 08:20:14 - [TEST_STEP][PASSED] - if (verifyElementChecked(findTestObject("Object Repository/tN Card/input_Occurrence Note"), 2, OPTIONAL)): null
+
+2021-07-27 08:20:15 - [MESSAGE][PASSED] - Object 'Object Repository/tN Card/input_Occurrence Note' is checked
+
+2021-07-27 08:20:15 - [TEST_STEP][PASSED] - println("Column Occurrence Note is checked"): null
+
+2021-07-27 08:20:15 - [TEST_STEP][PASSED] - if (verifyElementChecked(findTestObject("Object Repository/tN Card/input_Original Quote"), 2, OPTIONAL)): null
+
+2021-07-27 08:20:16 - [MESSAGE][PASSED] - Object 'Object Repository/tN Card/input_Original Quote' is checked
+
+2021-07-27 08:20:16 - [TEST_STEP][PASSED] - println("Column OriginaL Quote is checked"): null
+
+2021-07-27 08:20:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/input_Original Quote")): Object: 'Object Repository/tN Card/input_Original Quote' is clicked on
+
+2021-07-27 08:20:16 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/input_Original Quote' is clicked on
+
+2021-07-27 08:20:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/input_GL Quote")): Object: 'Object Repository/tN Card/input_GL Quote' is clicked on
+
+2021-07-27 08:20:17 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/input_GL Quote' is clicked on
+
+2021-07-27 08:20:17 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2021-07-27 08:20:19 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-07-27 08:20:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/svg_translationNotes Settings_settings_card_close")): Object: 'Object Repository/tN Card/svg_translationNotes Settings_settings_card_close' is clicked on
+
+2021-07-27 08:20:19 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/svg_translationNotes Settings_settings_card_close' is clicked on
+
+2021-07-27 08:20:19 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2021-07-27 08:20:21 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-07-27 08:20:21 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/button_gatewayEdit_Hamburger menu")): Object: 'Object Repository/tN Card/button_gatewayEdit_Hamburger menu' is clicked on
+
+2021-07-27 08:20:22 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/button_gatewayEdit_Hamburger menu' is clicked on
+
+2021-07-27 08:20:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/font_Account Settings")): Object: 'Object Repository/tN Card/font_Account Settings' is clicked on
+
+2021-07-27 08:20:22 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/font_Account Settings' is clicked on
+
+2021-07-27 08:20:22 - [TEST_STEP][PASSED] - loginHelper.AccountSettings.organization("test_org"): loginHelper.AccountSettings.organization is PASSED
+
+2021-07-27 08:20:23 - [MESSAGE][PASSED] - Object: 'Object Repository/First/div_org' is clicked on
+
+2021-07-27 08:20:23 - [MESSAGE][PASSED] - Object: 'Object Repository/First/org-parmed' is clicked on
+
+2021-07-27 08:20:25 - [MESSAGE][WARNING] - No alert found after 2 second(s).
+
+2021-07-27 08:20:25 - [MESSAGE][PASSED] - loginHelper.AccountSettings.organization is PASSED
+
+2021-07-27 08:20:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/First/span_Save and Continue")): Object: 'Object Repository/First/span_Save and Continue' is clicked on
+
+2021-07-27 08:20:26 - [MESSAGE][PASSED] - Object: 'Object Repository/First/span_Save and Continue' is clicked on
+
+2021-07-27 08:20:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/tN Card/div_tN Card")): Object: 'Object Repository/tN Card/div_tN Card' is clicked on
+
+2021-07-27 08:20:27 - [MESSAGE][PASSED] - Object: 'Object Repository/tN Card/div_tN Card' is clicked on
+
+2021-07-27 08:20:27 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/tN Card/legend_Note"), 2): Scroll to object 'Object Repository/tN Card/legend_Note' successfully
+
+2021-07-27 08:20:27 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/tN Card/legend_Note' successfully
+
+2021-07-27 08:20:27 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Object Repository/tN Card/legend_GLQuote"), 1, OPTIONAL)): com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/tN Card/legend_GLQuote' located by '//legend[(text() = 'GLQuote' or . = 'GLQuote')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/tN Card/legend_GLQuote' located by '//legend[(text() = 'GLQuote' or . = 'GLQuote')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1447)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$12.call(Unknown Source)
+	at gE_Test tN column checkboxes.run(gE_Test tN column checkboxes:128)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:398)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:389)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:368)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:255)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627388293784.run(TempTestSuite1627388293784.groovy:39)
+)
+
+2021-07-27 08:20:30 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //legend[(text() = 'GLQuote' or . = 'GLQuote')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-07-27 08:20:30 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/tN Card/legend_GLQuote' located by '//legend[(text() = 'GLQuote' or . = 'GLQuote')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/tN Card/legend_GLQuote' located by '//legend[(text() = 'GLQuote' or . = 'GLQuote')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1447)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$12.call(Unknown Source)
+	at gE_Test tN column checkboxes.run(gE_Test tN column checkboxes:128)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:398)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:389)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:368)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:255)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627388293784.run(TempTestSuite1627388293784.groovy:39)
+)
+[[ATTACHMENT|/Users/elsylitsonlambert/git/Katalon-gatewayEdit-Elsy/Reports/20210727_081812/Regression 1/20210727_081813/1627388430047.png]]
+
+2021-07-27 08:20:30 - [TEST_STEP][PASSED] - else: null
+
+2021-07-27 08:20:30 - [TEST_STEP][PASSED] - println("Duplicate column for GL Quote is not present in the card"): null
+
+2021-07-27 08:20:30 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Object Repository/tN Card/legend_OccurrenceNote"), 1, OPTIONAL)): com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/tN Card/legend_OccurrenceNote' located by '//legend[(text() = 'OccurrenceNote' or . = 'OccurrenceNote')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/tN Card/legend_OccurrenceNote' located by '//legend[(text() = 'OccurrenceNote' or . = 'OccurrenceNote')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1447)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$12.call(Unknown Source)
+	at gE_Test tN column checkboxes.run(gE_Test tN column checkboxes:135)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:398)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:389)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:368)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:255)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627388293784.run(TempTestSuite1627388293784.groovy:39)
+)
+
+2021-07-27 08:20:32 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //legend[(text() = 'OccurrenceNote' or . = 'OccurrenceNote')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-07-27 08:20:33 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/tN Card/legend_OccurrenceNote' located by '//legend[(text() = 'OccurrenceNote' or . = 'OccurrenceNote')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/tN Card/legend_OccurrenceNote' located by '//legend[(text() = 'OccurrenceNote' or . = 'OccurrenceNote')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1447)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$12.call(Unknown Source)
+	at gE_Test tN column checkboxes.run(gE_Test tN column checkboxes:135)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:398)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:389)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:368)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:255)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627388293784.run(TempTestSuite1627388293784.groovy:39)
+)
+[[ATTACHMENT|/Users/elsylitsonlambert/git/Katalon-gatewayEdit-Elsy/Reports/20210727_081812/Regression 1/20210727_081813/1627388432638.png]]
+
+2021-07-27 08:20:33 - [TEST_STEP][PASSED] - else: null
+
+2021-07-27 08:20:33 - [TEST_STEP][PASSED] - println("Duplicate column for Note is not present in the card"): null
+
+2021-07-27 08:20:33 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Object Repository/tN Card/legend_OrigQuote"), 1, OPTIONAL)): com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/tN Card/legend_OrigQuote' located by '//legend[(text() = 'OrigQuote' or . = 'OrigQuote')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/tN Card/legend_OrigQuote' located by '//legend[(text() = 'OrigQuote' or . = 'OrigQuote')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1447)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$12.call(Unknown Source)
+	at gE_Test tN column checkboxes.run(gE_Test tN column checkboxes:142)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:398)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:389)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:368)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:255)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627388293784.run(TempTestSuite1627388293784.groovy:39)
+)
+
+2021-07-27 08:20:35 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //legend[(text() = 'OrigQuote' or . = 'OrigQuote')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-07-27 08:20:35 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/tN Card/legend_OrigQuote' located by '//legend[(text() = 'OrigQuote' or . = 'OrigQuote')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/tN Card/legend_OrigQuote' located by '//legend[(text() = 'OrigQuote' or . = 'OrigQuote')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1447)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementPresent$12.call(Unknown Source)
+	at gE_Test tN column checkboxes.run(gE_Test tN column checkboxes:142)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:398)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:389)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:368)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:255)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627388293784.run(TempTestSuite1627388293784.groovy:39)
+)
+[[ATTACHMENT|/Users/elsylitsonlambert/git/Katalon-gatewayEdit-Elsy/Reports/20210727_081812/Regression 1/20210727_081813/1627388435203.png]]
+
+2021-07-27 08:20:35 - [TEST_STEP][PASSED] - else: null
+
+2021-07-27 08:20:35 - [TEST_STEP][PASSED] - println("Duplicate column for Original Quote is not present in the card"): null
+
+2021-07-27 08:20:35 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 08:20:35 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-07-27 08:18:17 - [TEST_SUITE][PASSED] - Regression 1: Test Cases/gE Test cases/gE_Test tN column checkboxes]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
